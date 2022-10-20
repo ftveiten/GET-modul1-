@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunt Classes</title>
+
+    <link rel="stylesheet" href="Styles test.css"/>
+
+    <style > 
+
+#farger{
+    color: blue;
+   }
+
+</style >
+
+</head>
+
+<body>
+
+    <div>
+        <button onclick="noLayout()">
+            Ingen layout
+        </button>
+        <button onclick="verticalLayout()">
+            Vertikal layout
+        </button>
+        <button onclick="horizontalLayout()">
+            Horisontal layout
+        </button>
+        <button onclick="gridLayout()">
+            Grid layout
+        </button>
+    </div>
+
+    <h1>My Hunt: Showdown Classes</h1>
+
+    <div id="cards">
+        <div class="card">
+            <div class="header darkgreen" onclick="showBasicBitch()">
+                Basic Bitch
+            </div>
+            <div id="BasicBitch"></div>
+        </div>
+
+        <div class="card">
+            <div class="header brown" onclick="showShotty()">
+                Shotty
+            </div>
+            <div id="Shotty"></div>
+        </div>
+
+        <div class="card">
+            <div class="header darkblue" onclick="showDoubleTrouble()">
+                Double Trouble
+            </div>
+            <div id="DoubleTrouble"></div>
+        </div>
+
+       
+    </div>
+
+
+    <script>
+
+            function noLayout() {
+    document.getElementById('cards').classList.value = '';
+}
+
+function horizontalLayout() {
+    noLayout();
+    document.getElementById('cards').classList.add('horizontal');
+}
+
+function verticalLayout() {
+    noLayout();
+    document.getElementById('cards').classList.add('vertical');
+}
+
+function gridLayout() {
+    noLayout();
+    document.getElementById('cards').classList.add('grid');
+}
+
+function showBasicBitch() {
+    blankAll();
+    document.getElementById('BasicBitch').innerHTML = /*html*/`
+    <div   Class="innerCard">
+        <ul>
+            <li>
+                Weapon
+                <ul>
+                    <li> <a href="https://huntshowdown.fandom.com/wiki/Winfield_M1876_Centennial#Winfield_M1876_Centennial"> Winfield M1876 Centennial</a></li>
+                    <li> <a href="https://huntshowdown.fandom.com/wiki/Nagant_M1895#Nagant_M1895_Silencer"> Nagant M1895 Silencer</a> </li>
+                </ul>
+            </li>
+            <li>
+                Tools
+                <ul>
+                    <li>Heavy Knife</li>
+                    <li>Med Kit</li>
+                    <li>Choke Bomb</li>
+                    <li>Concertina Trip Mine</li>
+                </ul>
+            </li>
+            <li>
+                Consumables
+                <ul>
+                    <li>Vitality Shot</li>
+                    <li>Regeneration Shot</li>
+                    <li>Hellfire Bomb</li>
+                    <li>Big Dynamite Bundle</li>
+                </ul>
+            </li>
+        </ul>
+    </div> 
+    `;
+}
+
+function showShotty() {
+    blankAll();
+    document.getElementById('Shotty').innerHTML = /*html*/`
+    <div Class="innerCard">
+        <ul>
+            <li>
+                Weapon
+                <ul>
+                    <li>Winfield 1887 Terminus</li>
+                    <li>Caldwell New Army</li>
+                </ul>
+            </li>
+            <li>
+                Tools
+                <ul>
+                    <li>Heavy Knife</li>
+                    <li>Med Kit</li>
+                    <li>Choke Bomb</li>
+                    <li>Concertina Trip Mine</li>
+                </ul>
+            </li>
+            <li>
+                Consumables
+                <ul>
+                    <li>Vitality Shot</li>
+                    <li>Regeneration Shot</li>
+                    <li>Flash Bomb</li>
+                    <li>Frag Bomb</li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+    `;
+}
+
+function showDoubleTrouble() {
+    blankAll();
+    document.getElementById('DoubleTrouble').innerHTML = /*html*/`
+    <div   Class="innerCard">
+        <ul>
+            <li>
+                Weapon
+                <ul>
+                    <li id="farger">Caldwell Conversion Uppercut x2</li>
+                    <li id="farger">LeMat Mark II Revolver x2</li>
+                </ul>
+            </li>
+            <li>
+                Tools
+                <ul>
+                    <li>Heavy Knife</li>
+                    <li>Med Kit</li>
+                    <li>Choke Bomb</li>
+                    <li>Concertina Trip Mine</li>
+                </ul>
+            </li>
+            <li>
+                Consumables
+                <ul>
+                    <li>Vitality Shot</li>
+                    <li>Regeneration Shot</li>
+                    <li>Hellfire Bomb</li>
+                    <li>Frag Bomb</li>
+                </ul>
+            </li>
+        </ul>
+        </div> 
+    `;
+}
+
+function blankAll() {
+    document.getElementById('BasicBitch').innerHTML = '';
+    document.getElementById('Shotty').innerHTML = '';
+    document.getElementById('DoubleTrouble').innerHTML = '';
+}
+
+
+
+
+    </script>
+    
+</body>
+
+
+</html>
