@@ -1,0 +1,65 @@
+
+
+body {
+    margin-left: 20px;
+}
+
+.card {
+    width: 500px;
+    background-color: rgb(180, 176, 176);
+    border: 1px solid rgb(26, 25, 25);
+    margin: 10px;
+}
+
+.innerCard{
+    padding: 10px;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    padding: 1% 0;
+    border: 1px solid gray;
+    user-select: none;
+}
+
+
+.darkgreen {
+    background-color: darkgreen;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.darkblue{
+    background-color: darkblue;
+}
+
+#farger{
+    color: blue;
+   }
+
+p {
+    padding-left: 10px;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 520px);
+    width: auto;
+}
+
+
